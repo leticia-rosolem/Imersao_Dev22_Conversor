@@ -1,15 +1,68 @@
-<div class="container">
-  <h1 class="page-title">
-    Conversor de Moedas
-  </h1>
-  <label for="moeda">Insira o valor</label><br>
-  <input type="number" id="valor" size="2" /><br>
-  <button type="submit" onclick="Converter()">Converter</button>
-  <div class="div-background">
-    <h2 id="valorConvertido"></h2>
-    <h2 id="valorConvertido1"></h2>
-    <h2 id="valorConvertido2"></h2>
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-image: url("https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/01/a-goblin-prepares-for-the-launch-of-the-original-gringotts-wizarding-bank-at-warner-bros-studio-tour-london-003-1548761520.jpg");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
 
-  </div>
-</div>
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+input {
+  margin: 12px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+label {
+  color: white;
+}
+
+button {
+  margin-top: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+h2 {
+  color: #b8860b;
+  font-size: 30px;
+}
+
+.div-background {
+  background-color: rgba(54, 54, 54, 0.75);
+  width: 100%;
+  height: 70vh;
+  margin: 0px 0px 0px;
+  border-radius: 8px;
+}
+
 
