@@ -4,21 +4,21 @@ function Converter() {
   var valorEmDolarNumerico = parseFloat(valor);
   console.log(valorEmDolarNumerico);
 
-  var valorEmReal = valorEmDolarNumerico * 5;
+  var valorEmReal = valorEmDolarNumerico / 5;
   console.log(valorEmReal);
-  var valorEmReal2 = valorEmDolarNumerico * 5.54;
+  var valorEmReal2 = valorEmDolarNumerico / 5.54;
+  var valorEmReal2 = valorEmReal2.toFixed(2)
   console.log(valorEmReal2);
-  var valorEmReal3 = valorEmDolarNumerico * 0.092784;
-  console.log(valorEmReal3.toFixed(4));
+  var valorEmReal3 = valorEmDolarNumerico / 0.092784;
+  var valorEmReal3 = valorEmReal3.toFixed(4)
+  console.log(valorEmReal3);
 
   var elementoValorConvertido = document.getElementById("valorConvertido");
-  var valorConvertido = "A Conversão de Dólar para real é de R$ " + valorEmReal;
+  var valorConvertido = "É o equivalente a U$" + valorEmReal;
   var elementoValorConvertido1 = document.getElementById("valorConvertido1");
-  var valorConvertido1 =
-    "A Conversão de Euro para real é de R$ " + valorEmReal2;
+  var valorConvertido1 = "É o equivalente a € " + valorEmReal2;
   var elementoValorConvertido2 = document.getElementById("valorConvertido2");
-  var valorConvertido2 =
-    "A Conversão de Bitcoin para real é de R$ " + valorEmReal3;
+  var valorConvertido2 = "É o equivalente a ฿  " + valorEmReal3;
 
   elementoValorConvertido.innerHTML = valorConvertido;
   elementoValorConvertido1.innerHTML = valorConvertido1;
